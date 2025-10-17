@@ -1,0 +1,95 @@
+:root {
+  color-scheme: light dark;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif;
+  margin: 0;
+  padding: 24px;
+  line-height: 1.45;
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+fieldset {
+  border: 1px solid #8884;
+  border-radius: 8px;
+  padding: 16px;
+}
+legend {
+  padding: 0 8px;
+  font-weight: 600;
+}
+label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+input[type="text"], select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #8884;
+  background: inherit;
+}
+/* Forzar legibilidad del desplegable del select */
+select {
+  background-color: #fff;
+  color: #111;
+}
+option {
+  background-color: #fff;
+  color: #111;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 720px) {
+  .row.two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.hint { color: #888; font-size: .9rem; }
+.error { color: #b00020; font-size: .9rem; }
+.preview {
+  display: grid;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #8881;
+}
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #8884;
+  background: #1f6feb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+.summary {
+  border: 1px dashed #8884;
+  border-radius: 8px;
+  padding: 12px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
